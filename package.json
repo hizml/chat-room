@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/hizml/chat-room/issues"
   },
-  "homepage": "https://github.com/hizml/chat-room#readme"
+  "homepage": "https://github.com/hizml/chat-room#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "socket.io": "^4.4.1"
+  }
 }
