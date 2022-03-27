@@ -1,0 +1,19 @@
+{
+  "name": "chat-room",
+  "version": "1.0.0",
+  "description": "chat-room",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hizml/chat-room.git"
+  },
+  "author": "zml",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hizml/chat-room/issues"
+  },
+  "homepage": "https://github.com/hizml/chat-room#readme"
+}
