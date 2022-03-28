@@ -1,6 +1,6 @@
+const http = require('http');
 const express = require('express');
 const app = express(); // 构建中间件
-const http = require('http');
 app.use(express.static('public')); // 将网页内容传入客户端
 
 const httpServer = http.createServer(app); // 创建服务器并运行于端口号
