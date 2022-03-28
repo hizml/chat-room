@@ -1,15 +1,15 @@
-const socketIo = require('socket.io');  //引入双工通讯
+const socketIo = require('socket.io'); // 引入双工通讯
 const library = require('./library.js');
 
 module.exports = function (httpServer) {
-  const socketServer = socketIo(httpServer);   //socket服务器监听httpServer服务器
-  socketServer.on('connect', function (socket) { //连接客户端
+  const socketServer = socketIo(httpServer); // socket服务器监听httpServer服务器
+  socketServer.on('connection', function (socket) { // 连接客户端
     console.log(socket.id + ' 客户端连接');
     setTimeout(function () {
       welcome(socket);//欢迎信息
       main(socket);   //菜单
     }, 1000);
-    socket.on('message', function (news) { //问题库
+    socket.on('message', function (news) { // 问题库
       setTimeout(function () {
         issue(socket, news)
       }, 1000);

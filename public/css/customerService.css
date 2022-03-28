@@ -15,7 +15,7 @@ body{background:#d8d8d8;}
 .kf-text .connects .tit span{ padding:0 6px; font-size:16px; position:relative; display:inline-block; line-height:15px; padding-top:1px;}
 .kf-text .connects .tit span::after{ display:block; content:''; width:8px;height:8px; border-radius:50%; background-color:#70d672; position:absolute;right:-8px; top:6px;}
 .kf-text .connects .records{ float:left;}
-.kf-text .connects .records .mess{width: 603px;height: 395px; border: 1px solid #e2e2e2; border-left-color:#ccc;border-right-color:#ccc;border-top-color:#e2e2e2; background-color:#fafafa; padding:0 17px;font-size: 16px; overflow-y: auto; }
+.kf-text .connects .records .mess{width: 603px;height: 365px; border: 1px solid #e2e2e2; border-left-color:#ccc;border-right-color:#ccc;border-top-color:#e2e2e2; background-color:#fafafa; padding:0 17px 30px;font-size: 16px; overflow-y: auto; }
 .kf-text .connects .records .mess .l-p{ text-align: left;}  	/*系统返回内容 样式*/
 .kf-text .connects .records .mess .r-p{ text-align: right;}  /*用户输入内容 样式*/
 

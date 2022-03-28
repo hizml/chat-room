@@ -1,6 +1,3 @@
-/**
- * Created by zml on 2017/4/13.
- */
 $(function () {
   var kf_text = document.getElementById('kf-text')
   showCenter(kf_text);
@@ -47,13 +44,13 @@ $(function () {
 
   socket.on('message', function (data) {     //监听回复
     var keyZ = data.types;
-    if (keyZ == 'welcome') {
+    if (keyZ === 'welcome') {
       welcometext(socket, data);
     }
-    if (keyZ == 'main') {
+    if (keyZ === 'main') {
       mainText(data);
     }
-    if (keyZ == 'issue' || keyZ == 'err') {
+    if (keyZ === 'issue' || keyZ === 'err') {
       issue(data);
     }
   });
@@ -64,7 +61,7 @@ $(function () {
     var timee = new Date().Format("yyyy年MM月dd hh:mm:ss");
     html += '<p class="chat">没有聊天记录了</p>';
     html += '<p class="time"><span><time>' + timee + '</time></span></p>';
-    html += '<p class="bject">京东客服</p>';
+    html += '<p class="bject">狗东客服</p>';
     html += '<p class="l-p"><span class="left"><i></i>' + socket.id + ':' + data.connect.con + '</span></p>';
     htmlImg += '<p class="l-p"><span class="left"><i></i><img src="images/' + data.connect.imgsrc + '"></span></p>';
     $mess.append(html);
@@ -106,7 +103,7 @@ $(function () {
     }, 200);
   }
 
-  Date.prototype.Format = function (fmt) { //author: meizz       格式化时间
+  Date.prototype.Format = function (fmt) { // 格式化时间
     var o = {
       "M+": this.getMonth() + 1, //月份
       "d+": this.getDate(), //日
